@@ -5,13 +5,14 @@
 }
 
 body {
-  background: linear-gradient(270deg, #3ff685, #2d2c2d);
+  /* background: linear-gradient(270deg, #3ff685, #2d2c2d); */
 }
 
 .container {
   padding: 20px;
   margin-bottom: 70px;
   margin-top: 20px;
+  background: linear-gradient(270deg, #3ff685, #2d2c2d);
 }
 
 #registration-form {
