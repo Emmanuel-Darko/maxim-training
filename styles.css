@@ -40,7 +40,7 @@ body {
 
 .about-intro {
   position: absolute;
-  left: 40%;
+  left: 35%;
   top: 15%;
   font-size: 100px;
   color: white;
@@ -49,10 +49,10 @@ body {
 
 .about-container {
   display: flex;
-  width: 1500px;
+  width: 1000px;
   height: 700px;
   background-color: white;
-  margin-left: 300px;
+  margin-left: 400px;
 }
 
 .about-text {
@@ -113,7 +113,7 @@ body {
 .choose-text {
   width: 500px;
   align-items: center;
-  margin-left: 250px;
+  margin-left: 100px;
   color: #747474;
   font-style: italic;
   font-size: 22px;
@@ -159,8 +159,8 @@ body {
 }
 
 .founder-pic {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   border-radius: 250px;
 }
 
@@ -168,12 +168,14 @@ body {
   color: #78A009;
   font-weight: bolder;
   margin-left: 100px;
+  text-align: center;
 }
 
 .founder-title {
   color: #747474;
   margin-left: 100px;
   font-weight: bold;
+  text-align: center;
 }
 
 .logo {
