@@ -3,34 +3,41 @@ body {
 }
 
 
-.images{
+.images {
   display: flex;
   animation-duration: 20s;
-  animation-name:mesimages ;
-  animation-iteration-count:infinite ;
+  animation-name: mesimages;
+  animation-iteration-count: infinite;
 }
-#carra{
+
+#carra {
   width: 100%;
   overflow: hidden;
 
 }
-@keyframes mesimages{
+
+@keyframes mesimages {
   0% {
-      transform: translateX(O);
+    transform: translateX(O);
   }
-  25%{
-      transform: translateX(-640px);
+
+  25% {
+    transform: translateX(-640px);
   }
-  50%{
-      transform: translateX(-1280px);
+
+  50% {
+    transform: translateX(-1280px);
   }
-  75%{
-      transform: translateX(-1920px);
+
+  75% {
+    transform: translateX(-1920px);
   }
-  100%{
-      transform: translateX(0);
+
+  100% {
+    transform: translateX(0);
   }
 }
+
 .about-intro {
   position: absolute;
   left: 40%;
@@ -52,7 +59,7 @@ body {
   width: 900px;
 }
 
-.text1{
+.text1 {
   color: #78A009;
   margin-left: 100px;
 }
@@ -87,7 +94,7 @@ body {
   display: flex;
   width: 100%;
   margin-top: 80px;
-  
+
 }
 
 .work-pic {
@@ -120,7 +127,7 @@ body {
   display: flex;
 }
 
-.values{
+.values {
   display: flex;
   margin: 0;
 }
@@ -163,7 +170,7 @@ body {
   margin-left: 100px;
 }
 
-.founder-title{
+.founder-title {
   color: #747474;
   margin-left: 100px;
   font-weight: bold;
@@ -176,90 +183,90 @@ body {
 }
 
 /*Homepage view*/
-.container1{
-    height: 600px;
-    width: 100%;
+.container1 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./images/image8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -200px;
+  transition: 2s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-out;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes animate {
+
+  0% {
     background-image: url(./images/image8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -200px;
-    transition: 2s;
-    
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-play-state: running;
-    animation-timing-function: ease-out;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
+  }
 
-}
-
-@keyframes animate{
-
-    0%{
-        background-image: url(./images/image8.jpg);
-    }
-
-    20%{
-        background-image: url(./images/image13.jpg);
-    }
-
-    40%{
-        background-image: url(./images/image12.jpg);
-    }
-
-    60%{
-        background-image: url(./images/image8.jpg);
-    }
-
-    80%{
-        background-image: url(./images/image13.jpg);
-    }
-
-    100%{
-        background-image: url(./images/image12.jpg);
-    }
-}
-
-.container2{
-    height: 600px;
-    width: 100%;
+  20% {
     background-image: url(./images/image13.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -200px;
-    background-color: grey;
-}
+  }
 
-.container3{
-    height: 600px;
-    width: 100%;
+  40% {
     background-image: url(./images/image12.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -200px;
-    background-color: grey;
+  }
+
+  60% {
+    background-image: url(./images/image8.jpg);
+  }
+
+  80% {
+    background-image: url(./images/image13.jpg);
+  }
+
+  100% {
+    background-image: url(./images/image12.jpg);
+  }
 }
 
-.texts{
-    text-align: center;
-    padding: 200px;
-    
+.container2 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./images/image13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -200px;
+  background-color: grey;
 }
 
-.text-above{
- font-size: 4rem;
- color: white;
- font-weight: bolder;
- margin-bottom: 70px;
- margin-top: 30px;
+.container3 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./images/image12.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -200px;
+  background-color: grey;
 }
 
-.text-below{
-    font-size: 1.5rem;
-    color: white;
-    background: rgba(65, 66, 65, 0.7)
+.texts {
+  text-align: center;
+  padding: 200px;
+
+}
+
+.text-above {
+  font-size: 4rem;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+.text-below {
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(65, 66, 65, 0.7)
 }
 
 * {
@@ -349,7 +356,7 @@ footer {
   width: 100%;
   background-color: rgb(41, 39, 39);
   height: 350px;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   /* margin: auto; */
   display: flex;
   justify-content: space-between;

@@ -9,21 +9,24 @@ body {
 }
 
 .container {
-  padding: 20px;
-  margin-bottom: 70px;
   margin-top: 20px;
   background: linear-gradient(270deg, #3ff685, #2d2c2d);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 20px;
 }
 
 #registration-form {
-  background-color: #f7f7f7; /* Light gray background for the form */
+  background-color: #f7f7f7;
+  /* Light gray background for the form */
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 960px;
   left: 300px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-bottom: 60px;
 }
 
 .form-group {
@@ -47,7 +50,8 @@ input[type="email"] {
 }
 
 input[type="submit"] {
-  background-color: #00cc44; /* Green background for the "Register" button */
+  background-color: #00cc44;
+  /* Green background for the "Register" button */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -64,10 +68,11 @@ input[type="submit"] {
   margin-bottom: 10px;
 }
 
-h1 {
+.container h1 {
   text-align: center;
   color: white;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 table,
@@ -84,7 +89,7 @@ td {
 
 #entriesTable {
   margin: 10px;
-  margin-right: 20%;
-  margin-left: 20%;
-  margin-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+
 }
