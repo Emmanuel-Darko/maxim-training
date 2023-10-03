@@ -79,7 +79,7 @@ header ul li a:hover {
 }
 
 footer {
-  padding-left: 10rem;
+  padding-left: 9rem;
   padding-right: 10rem;
   padding-top: 3rem;
   width: 100%;
@@ -153,6 +153,11 @@ footer {
   color: #fff;
   font-family: sans-serif;
 }
+
+.third-section #email {
+  font-weight: bold;
+}
+
 .third-section {
   color: #fff;
   font-family: sans-serif;
