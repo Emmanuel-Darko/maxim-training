@@ -1,3 +1,4 @@
+
 /*Homepage view*/
 .container1{
     height: 600px;
@@ -83,4 +84,177 @@
     font-size: 1.5rem;
     color: white;
     background: rgba(65, 66, 65, 0.7)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  /* height: 70px; */
+  margin: auto;
+  margin-top: 2rem;
+}
+
+header ul {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+header ul li a {
+  color: black;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  cursor: pointer;
+  color: #87a632;
+  text-decoration: underline;
+}
+
+#get-involved {
+  width: 120px;
+  background-color: #16325b;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 18px;
+}
+
+#get-involved:hover {
+  cursor: pointer;
+  color: #7a7a7a;
+}
+
+#donate {
+  width: 120px;
+  background-color: #87a632;
+  color: #ffff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 18px;
+}
+
+#donate:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.flag {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.flag:hover {
+  cursor: pointer;
+}
+
+footer {
+  padding-left: 9rem;
+  padding-right: 10rem;
+  padding-top: 3rem;
+  width: 100%;
+  background-color: rgb(41, 39, 39);
+  height: 350px;
+  margin-top: 5rem;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-section h2 {
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.first-section ul {
+  list-style: none;
+}
+
+.first-section ul li {
+  height: 30px;
+}
+
+.first-section ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.second-section ul {
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.second-section h2 {
+  color: #fff;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.second-section ul li {
+  height: 30px;
+}
+
+.second-section ul {
+  list-style: none;
+}
+
+.second-section ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.third-section h3 {
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.third-section p {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.third-section #email {
+  font-weight: bold;
+}
+
+.third-section {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.third-section h3 {
+  margin-top: 1rem;
+}
+
+.third-section span {
+  width: 50px;
 }
