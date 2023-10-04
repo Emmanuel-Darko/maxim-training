@@ -4,16 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register</title>
-</head>
 
-<body></body>
+ 
 
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,10 +19,18 @@
   <link rel="stylesheet" href="register.css" />
   <link rel="stylesheet" href="styles.css" />
 
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
+
   <title>Registration</title>
 </head>
 
-<body>
+
+
+<body id="register">
+
   <!-- header -->
   <header>
     <img src="./images/LogoWebsite-1 (1).png" alt="maxim logo" />
@@ -45,37 +46,44 @@
     </div>
   </header>
 
+ 
+
   <div class="container">
+    <p>{{allStudents}}</p>
+    <!-- <p>{{registrationData}}</p> -->
+
     <h1>Registration Form</h1>
-    <form id="registration-form">
+
+    <form @submit.prevent = "saveData()" id="registration-form">
+
       <div class="form-group">
         <label for="first-name">First Name</label>
-        <input type="text" id="first-name" name="first-name" required />
+        <input v-model="registrationData.fname" type="text" id="first-name" name="first-name" required />
       </div>
       <div class="form-group">
         <label for="other-names">Other Names</label>
-        <input type="text" id="other-names" name="other-names" />
+        <input v-model="registrationData.onames" type="text" id="other-names" name="other-names" />
       </div>
       <div class="form-group">
         <label for="phone-number">Phone Number</label>
-        <input type="tel" id="phone-number" name="phone-number" required />
+        <input v-model="registrationData.phone" type="tel" id="phone-number" name="phone-number" required />
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+        <input v-model="registrationData.email" type="email" id="email" name="email" required />
       </div>
       <div class="form-group">
         <label for="house-address">House Address</label>
-        <input type="text" id="house-address" name="house-address" />
+        <input v-model="registrationData.address" type="text" id="house-address" name="house-address" />
       </div>
       <div class="section-heading">Guardian Information</div>
       <div class="form-group">
         <label for="guardian-name">Guardian Name</label>
-        <input type="text" id="guardian-name" name="guardian-name" />
+        <input v-model="registrationData.gname" type="text" id="guardian-name" name="guardian-name" />
       </div>
       <div class="form-group">
         <label for="guardian-phone">Guardian Phone Number</label>
-        <input type="tel" id="guardian-phone" name="guardian-phone" />
+        <input v-model="registrationData.gphone" type="tel" id="guardian-phone" name="guardian-phone" />
       </div>
       <div class="form-group">
         <input type="submit" value="Submit" />
@@ -160,7 +168,45 @@
     </div>
   </footer>
 
-  <script src="./register.js"></script>
+  <script>
+    const {createApp} = Vue
+
+    createApp({
+      data(){
+        return{
+
+          registrationData:{
+            fname: "",
+            onames: "",
+            phone: "",
+            email: "",
+            address: "",
+            gname: "",
+            gphone: ""
+          },
+          allStudents: []
+        }
+      },
+
+      beforeMount(){
+        let temp = localStorage.getItem("student");
+        this.allStudents=JSON.parse(temp);
+
+      },
+
+      methods:{
+
+        saveData(){
+          this.allStudents.push(this.registrationData)
+          localStorage.setItem("student",JSON.stringify(this.allStudents))
+        }
+      }
+
+    }).mount('#register')
+
+    
+
+  </script>
 </body>
 
 </html>

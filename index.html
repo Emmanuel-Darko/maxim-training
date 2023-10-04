@@ -13,11 +13,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom styles -->
     <link rel="stylesheet" href="styles.css">
+
+   <!-- scripts -->
+   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+
     <title>Home</title>
 
 </head>
 
-<body>
+<body id="index">
     <!-- header -->
     <header>
         <img src="./images/LogoWebsite-1 (1).png" alt="maxim logo" />
@@ -34,14 +39,12 @@
     </header>
     <div class="container1">
         <div class="texts">
-            <p class="text-above">
-                Maxim Nyansa Foundation
-            </p>
-            <p class="text-below">
-                At MNF we believe that access to technology is a fundamental right in today's
-                digital age. Our foundation was established with a mission to bridge the digital
-                divide, and empower individuals.
-            </p>
+          <p class="text-above">
+            {{title}}
+        </p>
+        <p class="text-below">
+            {{subTitle}}
+        </p>
         </div>
     </div>
 
@@ -98,6 +101,21 @@
           <p id="email">Email Adres : mninfo@maximnyansa.com</p>
         </div>
     </footer>
+
+    <script>
+      const {createApp} = Vue
+
+      createApp({
+          data() {
+              return {
+                  num: 0,
+                  title: 'Maxim Nyansa Foundation',
+                  subTitle: 'THis MNF we believe that access to technology is a fundamental right in today\'s digital age. Our foundation was established with a mission to bridge the digital divide, and empower individuals'
+              }
+          }
+      }).mount('#index')
+  </script>
+
 </body>
 
 </html>
